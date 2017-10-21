@@ -1,3 +1,5 @@
+
+/*
 div, nav, header, main, footer {
     border: 0.5px solid red;
 }
@@ -6,47 +8,65 @@ div, nav, header, main, footer {
 /* global elements */
 
 body {
-  font-family: 'Helvetica', sans-serif;
   color: #4A4A4A;
   font-size: 16px;
+}
+
+header, footer, .quoter {
+  font-family: 'Helvetica', sans-serif;
 }
 
 strong {
   font-weight: 700;
 }
 
-h1, h2, h3 {
+main {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
 }
 
 h1 {
   font-size: 2rem;
-  padding: 1rem 0;
+  font-weight: 700;
 }
 
-p {
-  line-height: 1.4;
-  padding: 0.5rem 0;
+h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-weight: 700;
 }
 
-span {
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+span, p {
   font-weight: lighter;
+  line-height: 1.4;
+  font-size: 0.78rem;
 }
 
-header, .logo, nav ul, .hero-container {
+header, .logo, nav ul, .hero-container, .feature-container, .feature {
   display: flex;
+}
+
+header, .logo, nav ul, .hero-container, .feature {
   align-items: center;
 }
 
 /* header elements */
 
 header {
-  position:fixed;
+  position: fixed;
   height: 4rem;
   width: 100%;
   justify-content: space-between;
+  z-index: 2;
+  background-color: #ffffff;
 }
 
 /* logo and brand name elements */
@@ -67,8 +87,7 @@ nav li {
 }
 
 nav a {
-  text-decoration: none;
-  color: inherit;
+  color: #4A4A4A;
 }
 
 /* main body elements */
@@ -80,26 +99,76 @@ main {
 
 /* hero banner elements */
 
-.hero-container {
+.hero-container, .feature:last-child {
   background-color: #D8D8D8;
 }
 
-.hero-banner {
+.hero-banner, .main-feature {
   margin: 2rem 1.5rem;
   width: 60%;
 }
 
-.hero-banner img {
+.hero-banner img, .main-feature img {
   width: 100%;
 }
 
 .hero-body {
-  width: 30%;
+  width: 40%;
+  line-height: 1.2;
+}
+
+.hero-title {
+  padding-right: 2rem;
+}
+
+.hero-body p {
+  padding-top: 1.1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .hero-cta {
   background-color: #4A4A4A;
-  color: #F8F8F8;
   text-align: center;
+  margin: 1.8rem 3.8rem 0 0;
+  padding: 0.5rem 0;
+}
+
+.hero-cta a {
+  color: #F8F8F8;
+  font-weight: 300;
+}
+
+/* feature elements */
+
+.features {
+  width: 40%;
   margin-top: 1rem;
+}
+
+.feature .image {
+  width: 35%;
+  padding: 1rem;
+}
+
+.feature .image img {
+  width: 100%;
+  height: auto;
+}
+
+.feature .body {
+  width: 65%;
+}
+
+.main-feature p {
+  padding: 1.5rem 0;
+}
+
+.quoter {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+.feature .body p {
+  padding: 0.5rem 1rem 0.5rem 0;
 }
