@@ -10,6 +10,7 @@ div, nav, header, main, footer {
 body {
   color: #4A4A4A;
   font-size: 16px;
+  margin: auto;
 }
 
 header, footer, .quoter {
@@ -30,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-top: 2rem;
   font-weight: 700;
 }
@@ -77,6 +78,10 @@ header {
 
 .logo, nav {
   margin: 0 1.5rem;
+}
+
+.logo span {
+  font-size: 1.2rem;
 }
 
 /* navigation elements */
@@ -144,6 +149,7 @@ main {
 .features {
   width: 40%;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .feature .image {
@@ -171,4 +177,52 @@ main {
 
 .feature .body p {
   padding: 0.5rem 1rem 0.5rem 0;
+}
+
+/* course catalog elements */
+
+
+.courses-container {
+  background-color: #EAEBEC;
+  padding: 0 4.5rem;
+}
+
+.courses-header {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.courses-catalog {
+  margin: auto;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 25%;
+  background-color: #ffffff;
+  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 1rem;
+}
+
+.detail {
+  margin: 1rem;
+}
+
+.detail p {
+  padding-top: 0.5rem;
+}
+
+
+.course {
+
+}
+
+#engineering {
+  background-image: url("../media/images/course-software.jpg");
+  background-position: center;
+  background-size: contain;
 }
