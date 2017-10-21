@@ -1,0 +1,75 @@
+/* global elements */
+
+body {
+  font-family: sans-serif;
+  color: #4A4A4A;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* comment out redline border for positioning help
+div, nav, header, main, footer {
+    border: 0.5px solid red;
+}
+
+/* header elements */
+
+header {
+  position:fixed;
+  height: 4rem;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo and brand name elements */
+
+.logo-container {
+  height: 2rem;
+}
+
+.logo, nav {
+  margin: 0 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+/* navigation elements */
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding: 0 0.5rem;
+  font-size: 0.85rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  position: relative;
+  top: 4rem;;
+}
+
+.hero-container {
+  background-color: #D8D8D8;
+}
+
+.hero-cta {
+  background-color: #4A4A4A;
+  color: #F8F8F8;
+}
