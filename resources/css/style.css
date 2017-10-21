@@ -1,7 +1,12 @@
+div, nav, header, main, footer {
+    border: 0.5px solid red;
+}
+
+
 /* global elements */
 
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica', sans-serif;
   color: #4A4A4A;
   font-size: 16px;
 }
@@ -10,9 +15,29 @@ strong {
   font-weight: 700;
 }
 
-/* comment out redline border for positioning help
-div, nav, header, main, footer {
-    border: 0.5px solid red;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+p {
+  line-height: 1.4;
+  padding: 0.5rem 0;
+}
+
+span {
+  font-weight: lighter;
+}
+
+header, .logo, nav ul, .hero-container {
+  display: flex;
+  align-items: center;
 }
 
 /* header elements */
@@ -21,8 +46,6 @@ header {
   position:fixed;
   height: 4rem;
   width: 100%;
-  display: inline-flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -35,20 +58,8 @@ header {
 .logo, nav {
   margin: 0 1.5rem;
 }
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo span {
-  font-weight: 300;
-}
 
 /* navigation elements */
-
-nav ul {
-  display: flex;
-}
 
 nav li {
   padding: 0 0.5rem;
@@ -60,16 +71,35 @@ nav a {
   color: inherit;
 }
 
+/* main body elements */
+
 main {
   position: relative;
   top: 4rem;;
 }
 
+/* hero banner elements */
+
 .hero-container {
   background-color: #D8D8D8;
+}
+
+.hero-banner {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.hero-banner img {
+  width: 100%;
+}
+
+.hero-body {
+  width: 30%;
 }
 
 .hero-cta {
   background-color: #4A4A4A;
   color: #F8F8F8;
+  text-align: center;
+  margin-top: 1rem;
 }
