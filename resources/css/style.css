@@ -1,6 +1,6 @@
 
-/* --
-div, nav, header, main, footer {
+
+/*-- div, nav, header, main, footer {
     border: 0.5px solid red;
 }
 
@@ -51,12 +51,18 @@ span, p {
   font-size: 0.78rem;
 }
 
-header, .logo, nav ul, .hero-container, .feature-container, .feature {
+header, .logo, nav ul, .hero-container, .feature-container, .feature, .thesis-wrapper, .thesis, footer {
   display: flex;
 }
 
-header, .logo, nav ul, .hero-container, .feature {
+header, .logo, nav ul, .hero-container, .feature, .thesis-container, .thesis, footer {
   align-items: center;
+}
+
+header, footer {
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
 }
 
 /* header elements */
@@ -64,10 +70,7 @@ header, .logo, nav ul, .hero-container, .feature {
 header {
   position: fixed;
   height: 4rem;
-  width: 100%;
-  justify-content: space-between;
   z-index: 2;
-  background-color: #ffffff;
 }
 
 /* logo and brand name elements */
@@ -99,21 +102,21 @@ nav a {
 
 main {
   position: relative;
-  top: 4rem;;
+  top: 4rem;
 }
 
 /* hero banner elements */
 
-.hero-container, .feature:last-child {
+.hero-container, .feature:last-child, .thesis:first-child {
   background-color: #D8D8D8;
 }
 
-.hero-banner, .main-feature {
+.hero-banner, .main-feature, .thesis-feature {
   margin: 2rem 1.5rem;
   width: 60%;
 }
 
-.hero-banner img, .main-feature img {
+.hero-banner img, .main-feature img, .thesis-feature video {
   width: 100%;
 }
 
@@ -146,27 +149,27 @@ main {
 
 /* feature elements */
 
-.features {
+.features, .theses {
   width: 40%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.feature .image {
+.feature .image, .thesis .image {
   width: 35%;
   padding: 1rem;
 }
 
-.feature .image img {
+.image img {
   width: 100%;
   height: auto;
 }
 
-.feature .body {
+.body {
   width: 65%;
 }
 
-.main-feature p {
+.main-feature p, .thesis-feature p {
   padding: 1.5rem 0;
 }
 
@@ -175,8 +178,12 @@ main {
   font-weight: normal;
 }
 
-.feature .body p {
+.body p {
   padding: 0.5rem 1rem 0.5rem 0;
+}
+
+.feature a {
+  color: #6193DD;
 }
 
 /* course catalog elements */
@@ -187,7 +194,7 @@ main {
   padding: 0 4.5rem;
 }
 
-.courses-header {
+.courses-header, .thesis-header {
   text-align: center;
   padding-bottom: 1rem;
 }
@@ -219,4 +226,23 @@ main {
 .course img {
   width: 100%;
   height: auto;
+}
+
+/* thesis elements */
+
+.thesis-container {
+  background-color: #F3F5F5;
+}
+
+.thesis-feature h3 {
+  padding-top: 1.5rem;
+}
+
+
+/* footer elements */
+
+footer {
+  position: relative;
+  padding: 1rem 0 2rem 0;
+  margin-left: 1.5rem;
 }
