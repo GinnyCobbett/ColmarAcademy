@@ -232,7 +232,13 @@ footer span {
     font-size: 1rem;
   }
   p {
-    font-size: 0.78rem;
+    font-size: 1rem;
+  }
+  .thesis-feature h3, .feature h3 {
+    font-size: 1rem;
+  }
+  .body p, .feature p {
+    font-size: 1rem;
   }
   .tablet-nav, .mobile-nav {
     display: none;
