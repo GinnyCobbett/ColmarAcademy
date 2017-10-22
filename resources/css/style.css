@@ -104,6 +104,7 @@ span, p {
     line-height: 1.2;
   }
   .hero-cta {
+    background-color: #4A4A4A;
     padding: 0.5rem 0;
   }
   .courses-container {
@@ -124,6 +125,10 @@ span, p {
     width: 100%;
     line-height: 1.2;
     margin: 1rem;
+  }
+  .hero-cta {
+    background-color: #9B9B9B;
+    padding: 0.5rem 0;
   }
   .feature {
     margin: 1rem;
@@ -160,6 +165,9 @@ span, p {
   }
 
 }
+
+/* responsive specific rules end here */
+
 
 header, .logo, nav ul, .thesis-wrapper, .thesis, footer {
   display: flex;
@@ -236,7 +244,6 @@ main {
 }
 
 .hero-cta {
-  background-color: #4A4A4A;
   text-align: center;
   margin-top: 1.5rem;
 }
