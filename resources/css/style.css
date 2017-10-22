@@ -26,9 +26,11 @@ main {
 
 h1, h2 {
   font-weight: 700;
+  padding-top: 1rem;
 }
 
 h3 {
+  font-size: 1rem;
   font-weight: 500;
   padding-right: 1rem;
 }
@@ -52,9 +54,6 @@ span, p {
   h2 {
     font-size: 1.6rem;
   }
-  h3 {
-    font-size: 1rem;
-  }
   p {
     font-size: 0.78rem;
   }
@@ -72,11 +71,8 @@ span, p {
   h2 {
     font-size: 1.2rem;
   }
-  h3 {
-    font-size: 0.8rem;
-  }
   p {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
   }
   .course p {
     display: none;
@@ -86,7 +82,7 @@ span, p {
 /* responsive style that will cope with most small width screens up to 650px  */
 
 @media only screen and (min-width: 650px) {
-  .tablet-nav, .mobile-nav, .mobile-courses {
+  .tablet-nav, .mobile-nav, .mobile-courses, .mobile-image {
     display: none;
   }
   .hero-container, .feature-container, .feature, .courses-catalog {
@@ -110,11 +106,34 @@ span, p {
   .courses-container {
     background-color: #EAEBEC;
     padding: 1rem 4.5rem;
-    }
+  }
+  .body {
+    width: 65%;
+  }
+  .features {
+    width: 40%;
+  }
+  .feature .image {
+    width: 35%;
+    margin: 1rem;
+  }
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+  .feature:last-child, .thesis:first-child {
+    background-color: #D8D8D8;
+  }
+  .thesis-container {
+    background-color: #F3F5F5;
+  }
+  .thesis-feature h3 {
+    padding-top: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-  .desktop-nav, .mobile-nav, .courses-catalog {
+  .desktop-nav, .mobile-nav, .courses-catalog, .feature .image {
     display: none;
   }
   .hero-banner {
@@ -130,12 +149,22 @@ span, p {
     background-color: #9B9B9B;
     padding: 0.5rem 0;
   }
-  .feature {
-    margin: 1rem;
-    width: 100%;
-  }
   .main-feature {
     display: none;
+  }
+  .feature {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .mobile-image {
+    margin: 1rem;
+  }
+  .mobile-image img {
+    width: 100%;
+    height: auto;
+  }
+  .feature .body {
+    padding-left: 2rem;
   }
   .courses-container {
     margin: 2rem 1rem;
@@ -225,7 +254,7 @@ main {
 
 /* hero banner elements */
 
-.hero-container, .feature:last-child, .thesis:first-child {
+.hero-container {
   background-color: #D8D8D8;
 }
 
@@ -255,13 +284,18 @@ main {
 
 /* feature elements */
 
-.features, .theses {
+.features {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.theses {
   width: 40%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
-.feature .image, .thesis .image {
+.thesis .image {
   width: 35%;
   padding: 1rem;
 }
@@ -269,10 +303,6 @@ main {
 .image img {
   width: 100%;
   height: auto;
-}
-
-.body {
-  width: 65%;
 }
 
 .main-feature p, .thesis-feature p {
@@ -327,16 +357,6 @@ main {
   height: auto;
 }
 
-/* thesis elements */
-
-.thesis-container {
-  background-color: #F3F5F5;
-}
-
-.thesis-feature h3 {
-  padding-top: 1.5rem;
-}
-
 
 /* footer elements */
 
@@ -347,4 +367,5 @@ footer {
 
 footer span {
   padding-left: 1.5rem;
+  font-size: 0.78rem;
 }
