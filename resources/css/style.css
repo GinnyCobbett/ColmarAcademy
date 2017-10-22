@@ -1,5 +1,5 @@
 
-/*
+/* --
 div, nav, header, main, footer {
     border: 0.5px solid red;
 }
@@ -204,25 +204,19 @@ main {
   flex-shrink: 1;
   flex-basis: 25%;
   background-color: #ffffff;
-  padding: 1rem 1rem 1.5rem 1rem;
   margin: 1rem;
+  padding-bottom: 1.5rem;
 }
 
-.detail {
-  margin: 1rem;
+.course h3 {
+  padding: 1rem 1rem 0.25rem 1rem;
 }
 
-.detail p {
-  padding-top: 0.5rem;
+.course p {
+  padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
-
-.course {
-
-}
-
-#engineering {
-  background-image: url("../media/images/course-software.jpg");
-  background-position: center;
-  background-size: contain;
+.course img {
+  width: 100%;
+  height: auto;
 }
