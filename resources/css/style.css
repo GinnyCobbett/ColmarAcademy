@@ -1,7 +1,85 @@
 
 
-/*-- div, nav, header, main, footer {
+ div, nav, header, main, footer {
     border: 0.5px solid red;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.78rem;
+  }
+  .tablet-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .course p {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .tablet-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .desktop-nav {
+    display: none;
+  }
+  .tablet-nav {
+    display: none;
+  }
+  .logo-container {
+    display: none;
+  }
+  nav {
+    width: 100%;
+  }
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 }
 
 
@@ -26,19 +104,17 @@ main {
 }
 
 h1 {
-  font-size: 2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.6rem;
   padding-top: 2rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1rem;
   font-weight: 500;
+  padding-right: 1rem;
 }
 
 a {
@@ -48,7 +124,6 @@ a {
 span, p {
   font-weight: lighter;
   line-height: 1.4;
-  font-size: 0.78rem;
 }
 
 header, .logo, nav ul, .hero-container, .feature-container, .feature, .thesis-wrapper, .thesis, footer {
@@ -75,7 +150,7 @@ header {
 
 /* logo and brand name elements */
 
-.logo-container {
+.logo-container, .mobile-nav {
   height: 2rem;
 }
 
@@ -179,7 +254,7 @@ main {
 }
 
 .body p {
-  padding: 0.5rem 1rem 0.5rem 0;
+  padding: 0.5rem 1rem 0 0;
 }
 
 .feature a {
@@ -244,5 +319,8 @@ main {
 footer {
   position: relative;
   padding: 1rem 0 2rem 0;
-  margin-left: 1.5rem;
+}
+
+footer span {
+  padding-left: 1.5rem;
 }
