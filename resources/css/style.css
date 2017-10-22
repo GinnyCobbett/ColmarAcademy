@@ -28,10 +28,6 @@ h1, h2 {
   font-weight: 700;
 }
 
-h2 {
-  padding-top: 2rem;
-}
-
 h3 {
   font-weight: 500;
   padding-right: 1rem;
@@ -112,8 +108,8 @@ span, p {
   }
   .courses-container {
     background-color: #EAEBEC;
-  }
-
+    padding: 1rem 4.5rem;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -135,6 +131,9 @@ span, p {
   }
   .main-feature {
     display: none;
+  }
+  .courses-container {
+    margin: 2rem 1rem;
   }
   .mobile-courses li {
     margin: 0.25rem 0;
@@ -287,11 +286,6 @@ main {
 }
 
 /* course catalog elements */
-
-
-.courses-container {
-  padding: 0 4.5rem;
-}
 
 .courses-header, .thesis-header {
   text-align: center;
