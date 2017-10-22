@@ -234,12 +234,7 @@ footer span {
   p {
     font-size: 1rem;
   }
-  .thesis-feature h3, .feature h3 {
-    font-size: 1rem;
-  }
-  .body p, .feature p {
-    font-size: 1rem;
-  }
+
   .tablet-nav, .mobile-nav {
     display: none;
   }
@@ -313,14 +308,8 @@ footer span {
   .thesis-container {
     background-color: #F3F5F5;
   }
-  .thesis-feature h3, .feature h3 {
-    font-size: 0.85rem;
-  }
   .thesis-feature p {
     padding: 1.5rem 0;
-  }
-  .body p, .feature p {
-    font-size: 0.7rem;
   }
 }
 
