@@ -37,7 +37,7 @@ h1, h2 {
 
 h3 {
   font-weight: 500;
-  padding-right: 1rem;
+  line-height: 1.2;
 }
 
 a {
@@ -175,11 +175,8 @@ nav a {
   padding-bottom: 1.5rem;
 }
 
-.course h3 {
-  padding: 1rem 1rem 0.25rem 1rem;
-}
-
 .course p {
+  font-size: 0.85rem;
   padding: 0.25rem 1rem 0.25rem 1rem;
 }
 
@@ -233,7 +230,7 @@ footer span {
     font-size: 1rem;
   }
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .tablet-nav, .mobile-nav {
@@ -288,6 +285,9 @@ footer span {
   .courses-container {
     background-color: #EAEBEC;
     padding: 1rem 4.5rem;
+  }
+  .course h3 {
+    padding: 1rem 1rem 0.25rem 1rem;
   }
   .body {
     width: 65%;
