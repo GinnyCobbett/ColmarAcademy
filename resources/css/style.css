@@ -105,7 +105,7 @@ nav a {
 /* hero banner elements */
 
 .hero-container {
-  background-color: #D8D8D8;
+  background-color: #e8e8e8;
   padding-bottom: 1rem;
 }
 
@@ -129,7 +129,7 @@ nav a {
 }
 
 .hero-cta a {
-  color: #F8F8F8;
+  color: #ffffff;
   font-weight: 300;
 }
 
@@ -151,7 +151,7 @@ nav a {
 }
 
 .feature a {
-  color: #6193DD;
+  color: #0033CC;
 }
 
 /* course catalog elements */
@@ -201,6 +201,10 @@ nav a {
 .thesis .image {
   width: 35%;
   padding: 1rem;
+}
+
+.thesis-feature h3 {
+  padding-top: 1.5rem;
 }
 
 /* footer elements */
@@ -283,7 +287,7 @@ footer span {
     padding: 0.5rem 0;
   }
   .courses-container {
-    background-color: #EAEBEC;
+    background-color: #e8e8e8;
     padding: 1rem 4.5rem;
   }
   .course h3 {
@@ -304,7 +308,7 @@ footer span {
     height: auto;
   }
   .feature:last-child, .thesis:first-child {
-    background-color: #D8D8D8;
+    background-color: #e8e8e8;
   }
   .thesis-container {
     background-color: #F3F5F5;
